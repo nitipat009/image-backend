@@ -56,11 +56,14 @@ requests==2.27.1
 six==1.16.0
 starlette==0.13.6
 toml==0.10.2
-torch==1.11.0+cpu
+# torch==1.11.0+cpu CPU
+torch==1.7.1+cu110 #GPU
 torch-summary==1.4.5
-torchaudio==0.11.0+cpu
-torchvision==0.12.0+cpu
-tornado==6.1
+# torchaudio==0.11.0+cpu
+torchaudio==0.7.2
+# torchvision==0.12.0+cpu CPU
+torchvision==0.8.2+cu110 #GPU
+tornado==6.1 
 traitlets==5.1.1
 tqdm==4.64.0
 typing-extensions==3.7.4.3
@@ -68,3 +71,4 @@ urllib3==1.26.9
 uvicorn==0.12.3
 wcwidth==0.2.5
 zipp==3.8.0
+tensorflow-gpu==2.0
