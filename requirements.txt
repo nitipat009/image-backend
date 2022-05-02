@@ -56,7 +56,7 @@ requests==2.27.1
 six==1.16.0
 starlette==0.13.6
 toml==0.10.2
-torch==1.7.1+cu110
+torch==1.11.0+cpu
 torch-summary==1.4.5
 torchaudio==0.7.2
 torchvision==0.8.2+cu110
