@@ -1,3 +1,4 @@
+-f https://download.pytorch.org/whl/torch_stable.html
 appdirs==1.4.4
 backcall==0.2.0
 black==20.8b1
