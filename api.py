@@ -49,6 +49,7 @@ def remove_watermark(image_path, mask_path, max_dim, reg_noise, input_depth, lr,
 
         if step % show_step == 0:
             output_image = torch_to_np_array(output)
+            save_image(output_image, step , training_steps)
             # visualize_sample(image_np, output_image, nrow = 2, size_factor = 10)
         
         progress_bar.set_postfix(Loss = loss.item())
