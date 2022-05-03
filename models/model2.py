@@ -5,5 +5,6 @@ from pydantic import BaseModel
 class Model2(BaseModel) :
     image_path : bytes  = File(...) 
     mask_path : bytes = File(...)
-    BATCH_SIZE : int
-    LEARNING_RATE : float 
+    
+    
+    

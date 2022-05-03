@@ -59,10 +59,10 @@ def resizeMask(mask) :
 def formatMask(img, mask) :
     return scale(resizeImg(img) & resizeMask(mask))
 
-if __name__ == "__main__" :
-    scale_ratio = 0.5
-    img = cv.imread('img_2.jpg')
-    mask = cv.imread('img_2_mask.jpg')
-    add_mark = formatMask(img, mask)
-    result = remove_watermark(add_mark)
-    plotImg([img[:,:,::-1], mask, add_mark[:,:,::-1], result[:,:,::-1]], dim=(1, 4))
+# if __name__ == "__main__" :
+#     scale_ratio = 0.5
+#     img = cv.imread('img_2.jpg')
+#     mask = cv.imread('img_2_mask.jpg')
+#     add_mark = formatMask(img, mask)
+#     result = remove_watermark(add_mark)
+#     plotImg([img[:,:,::-1], mask, add_mark[:,:,::-1], result[:,:,::-1]], dim=(1, 4))

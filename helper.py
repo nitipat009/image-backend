@@ -16,6 +16,9 @@ def img_to_base64_str(img):
     img_str = "data:image/png;base64," + base64.b64encode(img_byte).decode()
     return img_str
 
+def save_image(np_array, step , TRAINING_STEPS):
+    pil_image = Image.fromarray((np_array * 255.0).transpose(1, 2, 0).astype('uint8'), 'RGB')
+    pil_image.save(f'progress/{str(step).zfill(len(str(TRAINING_STEPS)))}.png')
 
 def pil_to_np_array(pil_image):
     ar = np.array(pil_image)
